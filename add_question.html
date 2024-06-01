@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>질문 등록</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href="#" class="home-button">HOME</a> <!-- 홈 버튼 추가 -->
+    <h1>질문 등록</h1>
+    <form method="post">
+        <input type="text" name="title" placeholder="제목" required>
+        <textarea name="content" placeholder="내용" required></textarea>
+        <button type="submit">등록</button>
+    </form>
+    <br>
+    <a href="{{ url_for('index') }}">목록으로 돌아가기</a>
+</body>
+</html>

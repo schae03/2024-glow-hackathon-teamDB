@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ faq[1] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <a href="{{ url_for('index') }}" class="home-button">HOME</a>
+    <h1>{{ faq[1] }}</h1>
+    <p>{{ faq[2]|safe }}</p>
+    <br>
+    <a href="{{ url_for('index') }}">목록으로 돌아가기</a>
+</body>
+</html>
